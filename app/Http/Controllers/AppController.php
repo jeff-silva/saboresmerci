@@ -68,4 +68,18 @@ class AppController extends Controller
 
         return $data;
     }
+
+
+    public function getPosts() {
+        // $input = array_merge([
+        //     'post_type' => 'post',
+        // ], $request->all());
+
+        // return \App\Models\Post::paginate(15);
+        return \Corcel\Model\Post::type('page')->paginate(15);
+    }
+
+    public function getPost(Request $request) {
+        return \App\Models\Post::where('post_name', $request->input('name'))->first();
+    }
 }

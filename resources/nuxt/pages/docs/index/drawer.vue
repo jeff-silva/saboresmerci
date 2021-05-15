@@ -7,7 +7,7 @@
         <div class="col-12 py-1"></div>
 
         <div class="col-12 col-md-4 m-0">
-            <ui-color v-model="bind.backdropColor"></ui-color>
+            <!-- <ui-color v-model="bind.backdropColor"></ui-color> -->
         </div>
 
         <div class="col-12 py-1"></div>
@@ -59,7 +59,7 @@
                     </div>
 
                     <div class="col-12 mt-2">
-                        <ui-color v-model="bind.backdropColor"></ui-color>
+                        <!-- <ui-color v-model="bind.backdropColor"></ui-color> -->
                     </div>
                 </div>
             </div>

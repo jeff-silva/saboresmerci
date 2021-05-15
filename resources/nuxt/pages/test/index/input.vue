@@ -20,7 +20,7 @@
         <ui-auth-login></ui-auth-login>
         <ui-auth-password></ui-auth-password>
         <ui-auth-register></ui-auth-register>
-        <ui-color></ui-color>
+        <!-- <ui-color></ui-color> -->
         <ui-content></ui-content>
         <ui-datepicker></ui-datepicker>
         <ui-money></ui-money>
@@ -119,21 +119,21 @@ export default {
             value: `let data = [];\ndata.push(Math.round(Math.random() * 999));\nconsole.log(data);`,
         });
 
-        data.examples.push({
-            title: 'ui-color',
-            description: 'Código de cor no formato RGB8',
-            code: '<ui-color v-model="values.color"></ui-color>',
-            attr: 'color',
-            value: '#00000055',
-        });
+        // data.examples.push({
+        //     title: 'ui-color',
+        //     description: 'Código de cor no formato RGB8',
+        //     code: '<ui-color v-model="values.color"></ui-color>',
+        //     attr: 'color',
+        //     value: '#00000055',
+        // });
 
-        data.examples.push({
-            title: 'ui-color (sem input)',
-            description: 'Também retorna o código de cor, no entanto sem utilização da input',
-            code: '<ui-color v-model="values.color" :show-input="false"></ui-color>',
-            attr: 'color',
-            value: '#00000055',
-        });
+        // data.examples.push({
+        //     title: 'ui-color (sem input)',
+        //     description: 'Também retorna o código de cor, no entanto sem utilização da input',
+        //     code: '<ui-color v-model="values.color" :show-input="false"></ui-color>',
+        //     attr: 'color',
+        //     value: '#00000055',
+        // });
 
         data.examples.push({
             title: 'ui-content',

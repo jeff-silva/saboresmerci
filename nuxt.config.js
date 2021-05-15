@@ -75,21 +75,21 @@ export default {
 		'@nuxtjs/auth-next',
 
 		// https://firebase.nuxtjs.org/guide/getting-started
-		['@nuxtjs/firebase', {
-			config: {
-				apiKey: (process.env.FIREBASE_APIKEY || false),
-				authDomain: (process.env.FIREBASE_AUTHDOMAIN || false),
-				databaseURL: (process.env.FIREBASE_DATABASEURL || false),
-				projectId: (process.env.FIREBASE_PROJECTID || false),
-				storageBucket: (process.env.FIREBASE_STORAGEBUCKET || false),
-				messagingSenderId: (process.env.FIREBASE_MESSAGINGSENDERID || false),
-				appId: (process.env.FIREBASE_APPID || false),
-				measurementId: (process.env.FIREBASE_MEASUREMENTID || false),
-			},
-			services: {
-				database: true,
-			},
-		}],
+		// ['@nuxtjs/firebase', {
+		// 	config: {
+		// 		apiKey: (process.env.FIREBASE_APIKEY || false),
+		// 		authDomain: (process.env.FIREBASE_AUTHDOMAIN || false),
+		// 		databaseURL: (process.env.FIREBASE_DATABASEURL || false),
+		// 		projectId: (process.env.FIREBASE_PROJECTID || false),
+		// 		storageBucket: (process.env.FIREBASE_STORAGEBUCKET || false),
+		// 		messagingSenderId: (process.env.FIREBASE_MESSAGINGSENDERID || false),
+		// 		appId: (process.env.FIREBASE_APPID || false),
+		// 		measurementId: (process.env.FIREBASE_MEASUREMENTID || false),
+		// 	},
+		// 	services: {
+		// 		database: true,
+		// 	},
+		// }],
 	],
 
 	auth: {
@@ -183,18 +183,11 @@ export default {
 	build: {
 		extend(config, ctx) {
 			config.resolve.alias['vue'] = 'vue/dist/vue.common';
-			
-			// const path = path.replace(/^url\(["']?/, '').replace(/marker-icon\.png["']?\)$/, '');
-			// config.resolve.alias['./images/layers.png$'] = path.resolve(__dirname, '../node_modules/leaflet/dist/images/layers.png');
-			// config.resolve.alias['./images/layers-2x.png$'] = path.resolve(__dirname, '../node_modules/leaflet/dist/images/layers-2x.png');
-			// config.resolve.alias['./images/marker-icon.png$'] = path.resolve(__dirname, '../node_modules/leaflet/dist/images/marker-icon.png');
-			// config.resolve.alias['./images/marker-icon-2x.png$'] = path.resolve(__dirname, '../node_modules/leaflet/dist/images/marker-icon-2x.png');
-			// config.resolve.alias['./images/marker-shadow.png$'] = path.resolve(__dirname, '../node_modules/leaflet/dist/images/marker-shadow.png');
 		},
 
 		babel: {
 			plugins: [
-				['@babel/plugin-proposal-private-methods', { loose: true }],
+				// ['@babel/plugin-proposal-private-methods', { loose: true }],
 			],
 		},
 	}

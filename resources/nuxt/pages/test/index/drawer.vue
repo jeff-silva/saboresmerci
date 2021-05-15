@@ -13,7 +13,7 @@
             <div class="input-group-prepend"><div class="input-group-text">
                 Color
             </div></div>
-            <ui-color v-model="bind.backdropColor"></ui-color>
+            <!-- <ui-color v-model="bind.backdropColor"></ui-color> -->
         </div>
 
         <div class="col-12 py-1"></div>
@@ -91,7 +91,7 @@
                         <div class="input-group-prepend"><div class="input-group-text">
                             Color
                         </div></div>
-                        <ui-color v-model="bind.backdropColor"></ui-color>
+                        <!-- <ui-color v-model="bind.backdropColor"></ui-color> -->
                     </div>
                 </div>
             </div>

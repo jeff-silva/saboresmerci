@@ -1,6 +1,6 @@
 <template><div class="tevep-dates">
     <draggable v-model="compItems" v-bind="{animation:200, handle:'._handle'}" tag="div" @end="onNodeChange(focus)" :class="{'tevep-dates-horizontal':horizontal, 'tevep-dates-vertical':!horizontal}">
-        <div class="tevep-dates-each" v-for="n in compItems" :key="n.id" v-tooltip="titleResume(n)">
+        <div class="tevep-dates-each" v-for="n in compItems" :key="n.id">
             <div class="input-group">
                 <div class="input-group-prepend _handle"><div class="input-group-text">
                     <i class="fa fa-fw fa-bars"></i>

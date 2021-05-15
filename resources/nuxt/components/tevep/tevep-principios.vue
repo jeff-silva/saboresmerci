@@ -52,7 +52,7 @@
 					<input type="text" class="form-control" v-model="node.title" @keyup="tevep.title = (node.level==0)? node.title: tevep.title;">
 					
 					<div class="input-group-append"><div class="input-group-btn" v-if="nodeParent.id">
-						<nuxt-link :to="{query:{node:nodeParent.id, tab:$route.query.tab}}" class="btn btn-primary" v-tooltip="'Voltar um nível'">
+						<nuxt-link :to="{query:{node:nodeParent.id, tab:$route.query.tab}}" class="btn btn-primary">
 							<i class="fas fa-level-up-alt"></i>
 						</nuxt-link>
 					</div></div>

@@ -17,7 +17,7 @@
         <ui-auth-password></ui-auth-password>
         <ui-auth-register></ui-auth-register>
         <ui-check></ui-check>
-        <ui-color></ui-color>
+        <!-- <ui-color></ui-color> -->
         <ui-content></ui-content>
         <ui-datetime></ui-datetime>
         <ui-html></ui-html>
@@ -157,12 +157,12 @@ codes.push({
     value: 'qweQWE123!@#',
 });
 
-codes.push({
-    id: "color",
-    title: "Color picker",
-    code: `<ui-color v-model="value.color"></ui-color>`,
-    value: '#FF000088',
-});
+// codes.push({
+//     id: "color",
+//     title: "Color picker",
+//     code: `<ui-color v-model="value.color"></ui-color>`,
+//     value: '#FF000088',
+// });
 
 codes.push({
     id: "code",
