@@ -1,7 +1,7 @@
 <template><div>
     <a href="" class="btn btn-primary">Recarregar</a>
     <button type="button" class="btn btn-primary">Primary</button>
-    <div class="bg-whatsapp">Aaa</div>
+    <!-- <div class="bg-whatsapp">Aaa</div> -->
 
     <div class="row no-gutters">
         <div class="col-6">
